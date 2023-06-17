@@ -1,0 +1,23 @@
+<html>
+  <head>
+  <title>Ejemplo 5 Canvas </title>
+  <script type="text/javascript">
+  function dibujarCanvas(){
+  var canvas = document.getElementById('miCanvas');
+  var contexto = canvas.getContext('2d');
+  
+
+  // primera forma rectangulo rojo transparente
+  contexto.fillStyle = 'rgba(221,64,4, 0.2)'; // rojo transparente
+  contexto.fillRect(300,5,125,75);
+ }
+  function radianes(grados){
+  var radianes = (Math.PI/180)*grados;
+  return radianes;
+  }
+  </script>
+  </head>
+  <body onLoad="dibujarCanvas();">
+  <canvas id="miCanvas" width="450" height="350">Su navegador no soporta Canvas.</canvas>
+  </body>
+  </html>
